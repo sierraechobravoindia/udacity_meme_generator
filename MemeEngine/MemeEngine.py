@@ -21,7 +21,7 @@ class MemeEngine():
         img = img.resize((width, height), Image.NEAREST)
 
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype('/usr/share/fonts/truetype/tlwg/Laksaman-Bold.ttf', size=20)
+        font = ImageFont.truetype('font/Laksaman-Bold.ttf', size=20)
         message = f"'{text}' - {author}"
         wrapped = wrap(message, 25)
         w, h = random.randint(5,200), random.randint(5,300)
