@@ -20,7 +20,7 @@ class MemeEngine():
         img = img.resize((width, height), Image.NEAREST)
 
         draw = ImageDraw.Draw(img)
-        #font = ImageFont.truetype('./fonts/LilitaOne-Regular.ttf', size=20)
+        font = ImageFont.truetype('/usr/share/fonts/truetype/tlwg/Laksaman-Bold.ttf', size=20)
         message = f"'{text}' - {author}"
         draw.text((10, 30), message, fill='white')
         meme_path = f"meme_{random.randint(0,1000000)}.jpg"
